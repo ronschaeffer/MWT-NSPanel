@@ -1,10 +1,11 @@
 # MWT NSPanel
-#(based on marcfagers original work https://github.com/marcfager/nspanel-mf)
+#(based on marcfagers original work https://github.com/marcfager/nspanel-mf
+#and https://github.com/MarkWattTech/MWT-NSPanel)
 
 
 substitutions:
-  # Name the device and it's entities
-  device_name: nspanel-dev
+  # Name the device and its entities
+  device_name: kitchen-garden-switch
   
 # Functionality for the Nextion display
 external_components:
@@ -178,7 +179,7 @@ binary_sensor:
       - homeassistant.service:
           service: media_player.media_play_pause
           data:
-            entity_id: media_player.nesthub44af #Change ME - YOUR MEDIA PLAYER
+            entity_id: media_player.dining_room #Change ME - YOUR MEDIA PLAYER
 
   - platform: nextion
     name: $device_name Music next
